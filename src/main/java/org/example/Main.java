@@ -1,8 +1,6 @@
 package org.example;
 
 public class Main {
-//    private static Connection connection;
-//    private static Statement statement;
 
     public static void main(String[] args) throws Exception {
         Cougar cougar = new Cougar("Южноафриканский гепард", "100", Cougar.Gender.Female, 100);
@@ -14,30 +12,4 @@ public class Main {
         AnnotationProcessor.insertIntoTable(cougar2);
 
     }
-
-//    public static void connect() {
-//        try {
-//            Class.forName("org.sqlite.JDBC");
-//            connection = DriverManager.getConnection("jdbc:sqlite:/Users/sevaprilukov/LP9SQLITE.db");
-//            statement = connection.createStatement();
-//        } catch (SQLException | ClassNotFoundException var1) {
-//            var1.printStackTrace();
-//        }
-//
-//    }
-//
-//    public static void disconnect() {
-//        try {
-//            statement.close();
-//        } catch (SQLException var2) {
-//            var2.printStackTrace();
-//        }
-//
-//        try {
-//            connection.close();
-//        } catch (SQLException var1) {
-//            var1.printStackTrace();
-//        }
-//
-//    }
 }
